@@ -1,0 +1,16 @@
+PODS:
+  - MLItems (0.1.0)
+
+DEPENDENCIES:
+  - MLItems (from `../`)
+
+EXTERNAL SOURCES:
+  MLItems:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  MLItems: 743cc46aa2573df55945750136c5e5d61ebfe700
+
+PODFILE CHECKSUM: bf9eab6640cd66d95a9378331d879df884120e20
+
+COCOAPODS: 1.10.1

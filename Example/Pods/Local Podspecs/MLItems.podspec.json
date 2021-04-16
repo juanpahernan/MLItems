@@ -1,0 +1,35 @@
+{
+  "name": "MLItems",
+  "version": "0.1.0",
+  "summary": "A short description of MLItems.",
+  "homepage": "https://github.com/juanpahernan/MLItems",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "juanpahernan": "juanpablo.hernandez@mercadolibre.com"
+  },
+  "source": {
+    "git": "https://github.com/juanpahernan/MLItems.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "10.0"
+  },
+  "static_framework": true,
+  "source_files": "LibraryComponents/Classes/**/*.{swift}",
+  "resources": [
+    "LibraryComponents/Classes/**/*.xib",
+    "LibraryComponents/Assets/**/*.plist",
+    "LibraryComponents/Assets/**/*.ttf",
+    "LibraryComponents/Assets/**/*.bundle"
+  ],
+  "ios": {
+    "resource_bundles": {
+      "MLItemsResources": [
+        "LibraryComponents/Assets/**/*.xcassets"
+      ]
+    }
+  }
+}

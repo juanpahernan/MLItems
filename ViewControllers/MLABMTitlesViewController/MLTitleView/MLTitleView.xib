@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MLTitleView">
+            <connections>
+                <outlet property="contentView" destination="n7C-Ey-IHt" id="Jfo-rc-cYX"/>
+                <outlet property="titleLabel" destination="aRV-5T-tqR" id="WuI-Hx-dVA"/>
+                <outlet property="titleTextField" destination="9YT-0K-v0m" id="UtG-rI-1Yf"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="n7C-Ey-IHt">
+            <rect key="frame" x="0.0" y="0.0" width="739" height="200"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aRV-5T-tqR" userLabel="TitleLabel">
+                    <rect key="frame" x="40" y="61" width="52" height="34"/>
+                    <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qTW-lC-Sf5">
+                    <rect key="frame" x="0.0" y="100" width="739" height="0.0"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <constraints>
+                        <constraint firstAttribute="height" id="KO4-Vw-Yyp"/>
+                    </constraints>
+                </view>
+                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Title" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="9YT-0K-v0m" userLabel="TitleTextField">
+                    <rect key="frame" x="40" y="105" width="659" height="43"/>
+                    <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="u2K-ay-FV1"/>
+            <color key="backgroundColor" systemColor="systemGreenColor"/>
+            <constraints>
+                <constraint firstItem="aRV-5T-tqR" firstAttribute="leading" secondItem="n7C-Ey-IHt" secondAttribute="leadingMargin" constant="20" id="08u-VH-Ebz"/>
+                <constraint firstItem="qTW-lC-Sf5" firstAttribute="top" secondItem="aRV-5T-tqR" secondAttribute="bottom" constant="5" id="2se-Yv-idy"/>
+                <constraint firstAttribute="height" constant="200" id="Cf2-PH-64V"/>
+                <constraint firstItem="qTW-lC-Sf5" firstAttribute="centerY" secondItem="n7C-Ey-IHt" secondAttribute="centerY" id="DsC-W2-tok"/>
+                <constraint firstItem="9YT-0K-v0m" firstAttribute="top" secondItem="qTW-lC-Sf5" secondAttribute="bottom" constant="5" id="byk-fk-JqF"/>
+                <constraint firstAttribute="trailing" secondItem="qTW-lC-Sf5" secondAttribute="trailing" id="c6x-uL-scm"/>
+                <constraint firstItem="aRV-5T-tqR" firstAttribute="leading" secondItem="9YT-0K-v0m" secondAttribute="leading" id="f5u-QM-6mN"/>
+                <constraint firstAttribute="trailingMargin" secondItem="9YT-0K-v0m" secondAttribute="trailing" constant="20" id="nyc-iL-14U"/>
+                <constraint firstItem="qTW-lC-Sf5" firstAttribute="centerX" secondItem="n7C-Ey-IHt" secondAttribute="centerX" id="sjr-7G-tS6"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="-49" y="-282"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGreenColor">
+            <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
