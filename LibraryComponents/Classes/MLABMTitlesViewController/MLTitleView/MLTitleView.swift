@@ -24,11 +24,7 @@ class MLTitleView: UIView {
     }
     
     private func customInit() {
-        let frameworkBundle = Bundle(for: MLABMTitlesViewController.self)
-        let path = frameworkBundle.path(forResource: "MLItemsResources", ofType: "bundle")
-        let resourceBundle = Bundle(url: URL(fileURLWithPath: path!))
-        
-        let view: UIView = resourceBundle?.loadNibNamed("MLTitleView", owner: self, options: nil)?.first as! UIView
+        let view: UIView = Bundle.main.loadNibNamed("MLTitleView", owner: self, options: nil)?.first as! UIView
         view.translatesAutoresizingMaskIntoConstraints = false
         
         addSubview(view)
